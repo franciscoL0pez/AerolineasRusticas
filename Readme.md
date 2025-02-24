@@ -1,4 +1,4 @@
-Sistema de gestión de datos de vuelos de aeropuertos, diseñando e implementando una base de datos distribuida (similar a cassandra) para la materia taller de programacion I.   🦀
+Sistema de gestión de datos de vuelos en aeropuertos, mediante el diseño e implementación de una base de datos distribuida (similar a Cassandra). Este sistema proporciona soporte a nuestra aplicación de vuelos, que incluye una interfaz gráfica para facilitar su manipulación. El proyecto fue realizado como parte de la materia Taller de Programación I. Debido a que el proyecto se desarrolló en un repositorio privado, no es posible visualizar los commits.  🦀
 ## Cómo correr nodos
 
 **Importante:** Para correr los nodos se debe especificar la variable de entorno numérico `DB_KEY` de longitud menor a 20 dígitos; por ejemplo, creando un archivo `.env` en la raíz del proyecto con el siguiente contenido:
