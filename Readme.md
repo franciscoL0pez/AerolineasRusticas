@@ -1,70 +1,69 @@
-Sistema de gestión de datos de vuelos en aeropuertos, mediante el diseño e implementación de una base de datos distribuida (similar a Cassandra). Este sistema proporciona soporte a nuestra aplicación de vuelos, que incluye una interfaz gráfica para facilitar su manipulación. El proyecto fue realizado como parte de la materia Taller de Programación I. Debido a que el proyecto se desarrolló en un repositorio privado, no es posible visualizar los commits.  🦀
-## Cómo correr nodos
+Flight data management system in airports, through the design and implementation of a distributed database (similar to Cassandra). This system provides support to our flight application, which includes a graphical interface to facilitate its manipulation. The project was developed as part of the Taller de Programación I course. Since the project was developed in a private repository, it is not possible to view the commits. 🦀
 
-**Importante:** Para correr los nodos se debe especificar la variable de entorno numérico `DB_KEY` de longitud menor a 20 dígitos; por ejemplo, creando un archivo `.env` en la raíz del proyecto con el siguiente contenido:
+## How to Run Nodes
+
+**Important:** To run the nodes, you must specify the numeric environment variable `DB_KEY` with a length of less than 20 digits; for example, by creating a `.env` file in the root of the project with the following content:
+
 
 ```bash
 DB_KEY=82917
 ```
+### Option 1: **Dockerized**
 
-### Opción 1: **Dockerizado**
+*Requires having Docker and docker-compose installed*
 
-*Requiere tener instalado Docker y docker-compose*
-
-Para iniciar todos los nodos:
+To start all nodes:
     
 ```bash
 make docker
 ```
 
-Luego, para bajar los nodos:
+Then, for down nodes:
     
 ```bash
 make down
 ```
 
-### Opción 2: En **localhost**
+### Option 2: On **localhost**
 
-Para iniciar todos los nodos:
+To start all nodes:
 ```bash
 make nodes
 ```
-
-Luego, para limpiar los procesos:
+Then, to clean up processes:
     
 ```bash
 make clean
 ```
 
-Para iniciar un proceso en particular:
+To start a specific node:
 
 ```bash
 make node i=$i
 ```
-
-Para terminar un proceso en particular:
+To terminate a specific node:
 
 ```bash
 make kill i=$i
 ```
 
-## Cómo correr cliente
-Una vez iniciados los nodos, se puede correr el cliente con los siguientes comandos:
+## How to Run the Client
+Once the nodes are started, the client can be run with the following commands:
 
-Para correr el Simulador de Vuelos:
+To run the Flight Simulator:
+
 
 ```bash
 make sim
 ```
 
-Para correr la interfaz gráfica de Control de Vuelos:
-
+To run the Flight Control graphical interface:
 ```bash
 make ui
 ```
+## How to Run Tests
+To run the tests, execute the following command:
 
-## Cómo testear
-Para correr los tests, se debe ejecutar el siguiente comando:
 
 ```bash
 make test
