@@ -2,6 +2,7 @@
 This project is a Flight Data Management System for airports, built through the design and implementation of a distributed database (similar to Cassandra).  It powers our flight application, which includes a graphical interface to make everything easier to manage. 🖥
 Developed as part of the Taller de Programación I course.
 Note: Since the project was developed in a private repository, the commits are not publicly available. 🔒
+![Photo](https://github.com/user-attachments/assets/06562361-0f79-4926-9a11-64b7952b4312)
 
 
 
